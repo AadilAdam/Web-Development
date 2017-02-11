@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Marlabs Home Page</title>
+  
+	<style type="text/css">
+	body {
+		background-color: #f2f2f2;
+		margin-left: 100px;
+		margin-right: 100px;
+		background: linear-gradient(#4d4dff,#e6e6ff);
+		background-image: url(https://onlineplus.com.au/wp-content/uploads/2016/11/slider-background-3.jpg);
+		background-size: cover;
+	}
+	header img{
+		height: 60px;
+		width: 200px;
+	}
+
+	nav {
+		background-color: #262626;
+		border-radius: 5px;
+		margin-top: 5px;
+	}
+
+
+	ul {
+    	list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+    	overflow: hidden;
+	}
+
+	li {
+    	float: left;
+	}
+
+	li a {
+    	display: block;
+    	color: white;
+    	text-align: center;
+    	padding: 14px 16px;
+    	text-decoration: none;
+    	-webkit-transition-duration: 0.4s;
+    	transition-duration: 0.4s;
+	}
+
+	a:hover {
+		background-color: red;
+	}
+
+	@media screen and (min-width: 360px) and (max-width: 750px) , screen and (orientation: portrait) {
+		li {
+			float: none;
+			text-align: center;
+		}
+	}
+
+	.container{
+		float: left;
+		width: 70%;
+		opacity: 0.4;
+	}
+
+	.asideContainer {
+		float: left;
+		width: 30%;
+		opacity: 0.4;
+	}
+
+	@media screen and (min-width: 360px) and (max-width: 750px),screen and (orientation: portrait) {
+		.container {
+			float: none;
+			width: 100%;
+		}
+	}
+
+	@media screen and (min-width: 360px) and (max-width: 750px), screen and (orientation: portrait) {
+		.asideContainer{
+			float: none;
+			width: 100%;
+			margin-left: 0px;
+			padding: 0;
+		}
+	}
+
+	article {
+		background-color: white;
+		/*height: 50%;
+		width: 60%;*/
+		border-radius: 5px;
+		padding: 20px;
+		margin-bottom: 10px;
+	}
+
+	#para1 {
+		font-style: italic;
+		color: #595959;
+	}
+
+	.articlePost {
+		color: red;
+	}
+	
+	aside{
+		background-color: white;
+		/*height: 32%;
+		width: 35%;*/
+		padding: 20px;
+		border-radius: 5px;
+		margin-bottom: 10px;
+		margin-left: 10px;
+		word-wrap: break-word;
+	}
+
+	footer{
+			background-color: #262626;
+			color: white;
+			clear: both;
+			padding: 10px;
+			border-radius: 5px;
+		}
+
+	footer span{
+			color: red;
+		}
+	</style>
+</head>
+
+<body>
+<div>
+	<header><img src="https://upload.wikimedia.org/wikipedia/en/e/e0/Marlabs_Logo.jpg"></header>
+</div>
+	<nav>
+	<ul>
+	<li><a href="Homepage.html">Home</a></li>
+	<li><a href="Profile.html">Profile</a></li>
+	<li><a href="Contact">Contact</a></li>
+	<li><a href="Login.html">Login</a></li>
+	<li><a href="Signup.html">SignUp</a></li>
+</ul>		
+</nav>
+
+<br>
+<div>
+	<div class="container">
+		<article>
+			<h3 class="articlePost">First Post</h3>
+			<p id="para1">This content is going to describe the above post</p>
+			<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br /><br />
+			It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.<br /><br />
+			containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		</article>
+
+		<article>
+			<h3 class="articlePost">Second Post</h3>
+			<p id="para1">This content is going to describe the above post</p>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+			<br/><br />
+			It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.
+			<br /><br />
+			containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		</article>
+		
+	</div>
+
+	<div class="asideContainer">
+		<aside>
+		<h3>Top Sidebar</h3>
+		<content>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</content>
+		</aside>
+		<aside>
+		<h3>Middle Sidebar</h3>
+		<content>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</content>
+		</aside>
+		<aside>
+		<h3>Bottom Sidebar</h3>
+		<content>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</content>
+		</aside>
+	</div>
+
+</div>
+
+<footer>Copyright@<span>Marlabs Inc.</span></footer>
+
+</body>
+</html>
